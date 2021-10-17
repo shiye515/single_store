@@ -5,3 +5,7 @@
 ## 0.0.3
 
 * add usage and features
+
+## 0.0.4
+
+* update license title
