@@ -6,6 +6,8 @@ a simple store hold all values in a singleton, recommended for use with ChangeNo
 
 - its simple, only one class and one methord
 - save values without InheritedWidget, so it can be used anywhere(not only in widget) 
+- with ChangeNotifier & AnimatedBuilder,the store can be reactive
+- also can be used to save const value(String, List, Map...)
 
 ## Usage
 
