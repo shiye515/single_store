@@ -1,0 +1,21 @@
+name: single_store
+description: a simple store hold all values in a singleton, recommended for use with ChangeNotifier & AnimatedBuilder.
+version: 0.0.1
+homepage:
+repository: https://github.com/shiye515/single_store
+issue_tracker: https://github.com/shiye515/single_store/issues
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
