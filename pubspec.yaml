@@ -1,9 +1,10 @@
 name: single_store
 description: a simple store hold all values in a singleton, recommended for use with ChangeNotifier & AnimatedBuilder.
-version: 0.0.1
+version: 0.0.3
 homepage:
 repository: https://github.com/shiye515/single_store
 issue_tracker: https://github.com/shiye515/single_store/issues
+publish_to: https://pub.dev/
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

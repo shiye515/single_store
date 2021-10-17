@@ -4,24 +4,35 @@ a simple store hold all values in a singleton, recommended for use with ChangeNo
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- its simple, only one class and one methord
+- save values without InheritedWidget, so it can be used anywhere(not only in widget) 
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+class MyController with ChangeNotifier {
+  int count = 0;
+
+  MyController() {
+    count += 1;
+  }
+}
+
+class Example extends StatelessWidget {
+  Example({Key? key}) : super(key: key);
+  final ctrl = SingleStore().get(() => MyController());
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: AnimatedBuilder(
+        animation: ctrl,
+        builder: (ctx, _) {
+          return Center(
+            child: Text('${ctrl.count}'),
+          );
+        },
+      ),
+    );
+  }
+}
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
